@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exemplos-pipes.component.css']
 })
 export class ExemplosPipesComponent implements OnInit {
+  
+  constructor() { }
 
   livro: any = {
     titulo: 'Beginning Angular with Typescript (updated to Angular)',
@@ -16,9 +18,17 @@ export class ExemplosPipesComponent implements OnInit {
     url:"https://ler.amazon.com.br/kp/embed?asin=B01N9ZUHBA&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_XbG2Fb29QG43B"
   };
 
-  constructor() { }
+  livros: string[] = ['Java', 'Angular 11'];
 
-  ngOnInit(): void {
+  filtro: string;
+
+  addCurso(valor){
+    this.livros.push(valor);
+    console.log(this.livros);
+  }
+   
+  
+  ngOnInit(){
   }
 
 }
