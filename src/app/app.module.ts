@@ -11,6 +11,7 @@ import { SettingsService } from './settings.service';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 
 import ptBr from '@angular/common/locales/pt';
+import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
 
 registerLocaleData(ptBr)
 
@@ -19,7 +20,8 @@ registerLocaleData(ptBr)
     AppComponent,
     ExemplosPipesComponent,
     CamelCasePipe,
-    FiltroArrayPipe
+    FiltroArrayPipe,
+    FiltroArrayImpuroPipe
   ],
   imports: [
     BrowserModule,
